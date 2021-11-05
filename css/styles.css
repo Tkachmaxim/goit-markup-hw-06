@@ -297,17 +297,20 @@ header {
 }
 
 
-.form:hover .form-icon, .form:hover .modal-input {
+.modal-input:hover ~ .form-icon, .modal-input:focus ~ .form-icon {
   fill: var(--hover-web-color);
+  outline: none;
+}
+
+.modal-input:focus, .modal-input:hover {
   border-color: var(--hover-web-color);
   outline: none;
 }
 
-.form:focus .form-icon, .form:focus .modal-input {
-  fill: var(--hover-web-color);
-  border-color: var(--hover-web-color);
+.modal-input {
   outline: none;
 }
+
 
 
 .form-icon {
@@ -800,6 +803,8 @@ input {
 .name-btn {
   margin-left: 0;
 }
+
+
 .icon-send-btn {
   position: absolute;
   fill: var(--accent-color);
